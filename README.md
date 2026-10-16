@@ -64,9 +64,15 @@ The dashboard then opens in your browser with a filter sidebar.
 
 ## Deployment
 
-The static dashboard is hosted on **Vercel**. `vercel.json` rewrites the root URL to the dashboard file so the site is reachable at `/`.
+**Live dashboard:** https://bmw-sales-analytics.vercel.app
 
-Every push to `main` triggers a new deployment.
+The static dashboard is hosted on **Vercel**. `vercel.json` rewrites the root URL to the dashboard file, so the site is reachable at `/` instead of the full file path.
+
+To redeploy after a change:
+
+```bash
+vercel --prod
+```
 
 ---
 
